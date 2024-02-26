@@ -14,5 +14,5 @@
 # bibliothèque installé :
 	eslint@8.57.0 | MIT | deps: 38 | versions: 351 commande installation : npm init @eslint/config
 	Node version v12.22.9
-	express 
+	express version 4.18.2
 
