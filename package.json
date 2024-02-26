@@ -11,6 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "lint": "^0.8.19",
+    "mkdirp": "^3.0.1",
+    "nodejs": "^0.0.0",
+    "optionator": "^0.9.3"
+  },
+  "devDependencies": {
     "eslint": "^8.57.0"
   }
 }
