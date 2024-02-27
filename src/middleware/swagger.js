@@ -10,7 +10,7 @@ const swaggerGeneration = {
         },
         servers: [
             {
-                url: 'http://localhost:8085/api/',
+                url: 'http://localhost:8085/',
                 description: 'Development server',
             },
         ],
