@@ -2,6 +2,9 @@
 
 # Description
 
+# Ressources
+
+    La recette docker du project est disponible dans le dossier ressources
 
 # plugin utilisé :
 
