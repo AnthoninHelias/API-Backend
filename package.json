@@ -7,7 +7,7 @@
     "test": "echo \\\"Error: no src/test specified\\\" && exit 1",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
-    "mochaTest": "mocha",
+    "mochaTest": "mocha src/test/test.js",
     "start": "nodemon src/index.js"
   },
   "author": "",
