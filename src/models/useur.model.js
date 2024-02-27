@@ -1,5 +1,4 @@
-const dataBase = require('../db/db-connection');
-const {createMochaInstanceAlreadyDisposedError} = require("mocha/lib/errors");
+const dataBase = require('../db/db-connection.js');
 
 const UserConstructor = function (user) {
     this.id = user.id;
@@ -12,7 +11,15 @@ const UserConstructor = function (user) {
 }
 
 getAllUsers = result_bdd_request => {
-    dataBase.query('SELECT * FROM users', (error, result) => {
+    dataBase.query('SELECT * FROM test_db.users', (error, result) => {
+        if (error) {
+            result_bdd_request(error);
+        }
+        result_bdd_request(null, result);
+    });
+}
+getUsersById = (id, result_bdd_request) => {
+    dataBase.query('SELECT * FROM test_db.users WHERE id = ${:id}', id, (error, result) => {
         if (error) {
             result_bdd_request(error);
         }
@@ -22,5 +29,6 @@ getAllUsers = result_bdd_request => {
 
 module.exports = {
     UserConstructor,
-    getAllUsers
+    getAllUsers,
+    getUsersById
 };

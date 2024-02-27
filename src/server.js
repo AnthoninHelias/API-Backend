@@ -18,13 +18,15 @@ app.use(express.json());
 app.set('json spaces', 2);
 
 const useurRouter = require('./routes/useur.route');
+const useurRouter2 = require('./routes/useur.route');
 const {serve} = require("swagger-ui-express");
 //const docRoute = require('./middleware/swagger');
 
 app.use('/useur', useurRouter);
+app.use(`/useur/:id`, useurRouter2);
 //app.use('/doc', docRoute);
 
 
-module.exports = app;
-module.exports = server;
+module.exports = {app, server};
+
 

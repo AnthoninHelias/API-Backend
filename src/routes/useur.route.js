@@ -2,7 +2,7 @@ const router = require('express').Router();
 
 const {
     getAllUsers,
-    // getUsersById,
+    getUsersById,
     // getUsersByName,
     // createUsers,
     // updateUsers,
@@ -10,7 +10,7 @@ const {
 } = require('../controllers/user.controlller');
 
 router.get('/', getAllUsers);
-// router.get('/:id', getUsersById);
+router.get('/:id', getUsersById);
 // router.get('/filter/:name', getUsersByName);
 // router.post('/', createUsers);
 // router.put('/:id', updateUsers);
