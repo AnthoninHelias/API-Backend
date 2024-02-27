@@ -1,5 +1,6 @@
 build/*
 node_modules/*
-src/test/**
-/src/test/test.js/
+
 .envExemple
+server.js
+
