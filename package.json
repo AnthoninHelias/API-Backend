@@ -8,7 +8,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
     "mochaTest": "mocha src/test/test.js",
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/server.js"
   },
   "author": "",
   "license": "ISC",
