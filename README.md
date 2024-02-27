@@ -24,6 +24,8 @@
     "mocha": "^10.3.0"
     "nodejs": "^0.0.0"
     "swagger-ui-express": "^5.0.0"
+    "pg": "^8.11.3" 
+    "nodemon": "^3.1.0"
 
 # Commande installation bibliothèque
 
@@ -36,3 +38,5 @@
     npm install swagger-ui-express
     npm install swagger-jsdoc
     npm install dotenv
+    npm install pg
+    npm install nodemon
