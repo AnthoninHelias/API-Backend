@@ -49,3 +49,9 @@ E
 src/index.js,f/9/f900edc44cb929c2267a16100a32851f6d5b477d
 I
 src/middleware/swagger.js,6/0/6003d190740f942da03e819d87168b6980ab4d0a
+L
+src/routes/bookworm.route.js,6/e/6e70c939ad458194a94c4104755c88311fa5e922
+K
+src/routes/[sujet].route.js,6/1/6187554a07270b0e1f949a0e9a2111386536ca7f
+V
+&src/controllers/[sujet].controlller.js,c/5/c5db1f6b400be600827b94c8331c5fc6c72e3742
