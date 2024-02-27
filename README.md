@@ -1,5 +1,8 @@
 # API-Backend
 
+# Description
+
+
 # plugin utilisé :
 
 	.ignore
@@ -9,10 +12,27 @@
 	SonarLint
 
 # Ide Utilisé :
+
 	phpStorm
 
 # bibliothèque installé :
-	eslint@8.57.0 | MIT | deps: 38 | versions: 351 commande installation : npm init @eslint/config
-	Node version v12.22.9
-	express version 4.18.2
 
+	eslint@8.57.0 | MIT | deps: 38 | versions: 351
+	Node version v20.9.0
+    "dotenv": "^16.4.5"
+    "express": "^4.18.2"
+    "mocha": "^10.3.0"
+    "nodejs": "^0.0.0"
+    "swagger-ui-express": "^5.0.0"
+
+# Commande installation bibliothèque
+
+    npm init
+    npm install express
+    npm install mocha
+    npm install nodejs
+    npm install eslint
+    npm init @eslint/config
+    npm install swagger-ui-express
+    npm install swagger-jsdoc
+    npm install dotenv
