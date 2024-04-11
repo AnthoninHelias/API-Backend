@@ -58,7 +58,7 @@ updateUser = (id, user, result_bdd_request) => {
     const {username, password, first_name, last_name, email, age} = user;
 
     dataBase.query(
-        "UPDATE test_db.user SET username = $1, password = $2, first_name = $3, last_name = $4, email = $5, age = $6 ",
+        "UPDATE test_db.users SET username = $1, password = $2, first_name = $3, last_name = $4, email = $5, age = $6 ",
         [username, password, first_name, last_name, email, age, id],
         (error, response) => {
             if (error) {
@@ -71,7 +71,7 @@ updateUser = (id, user, result_bdd_request) => {
 
 
 deleteUser = (id, result_bdd_request) => {
-    dataBase.query("DELETE FROM test_db.user WHERE id = $1", [id], (error, response) => {
+    dataBase.query("DELETE FROM test_db.users WHERE id = $1", [id], (error, response) => {
         if (error) {
             result_bdd_request(error);
         }
