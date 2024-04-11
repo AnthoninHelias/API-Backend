@@ -40,3 +40,9 @@ K
 src/routes/swagger.route.js,2/3/23e9f44b6b9c205151e1b7acc91fb8bf15e92009
 L
 ressources/créationData.sql,1/6/163cc99df9f61be41a4211001945e7630d01be22
+L
+src/models/vehicule.model.js,f/0/f0cafad8e98d9804a3bbccbcc0e24aede9b8d08c
+V
+&src/controllers/vehicule.controller.js,c/5/c5001b8e906f378276f45a2b19a6763694eaf19e
+L
+src/routes/vehicule.route.js,e/d/edb2f1ce4447cf568f41d0f885a61861b98756cc

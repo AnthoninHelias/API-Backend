@@ -1,5 +1,4 @@
 const dataBase = require('../db/db-connection.js');
-const {getUsersByName} = require("../controllers/user.controlller");
 
 const UserConstructor = function (user) {
     this.id = user.id;
