@@ -8,7 +8,8 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
     "mochaTest": "mocha src/test/test.js",
-    "start": "nodemon src/server.js"
+    "start": "nodemon src/server.js",
+    "swagger": "node ./src/middleware/swagger.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.57.0"
+    "eslint": "^8.57.0",
+    "swagger-autogen": "^2.23.7"
   }
 }

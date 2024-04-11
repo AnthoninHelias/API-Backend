@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 const dotenv = require('dotenv')
+const swaggerFile = require('./middleware/swagger-output.json');
+const swaggerUI = require('swagger-ui-express')
 
 const getConfigSwagger = require('./middleware/swagger.js')
 
@@ -19,9 +21,10 @@ app.set('json spaces', 2);
 
 const useurRouter = require('./routes/useur.route');
 const vehiculeRouter = require('./routes/vehicule.route')
-const {serve} = require("swagger-ui-express");
-//const {getUsersByName} = require("./controllers/user.controlller");
-//const docRoute = require('./middleware/swagger');
+
+
+app.use('/docs', swaggerUI.serve)
+app.get('/docs', swaggerUI.setup(swaggerFile))
 
 app.use('/useur', useurRouter);
 app.use('/vehicule', vehiculeRouter);

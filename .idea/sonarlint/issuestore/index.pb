@@ -46,3 +46,5 @@ V
 &src/controllers/vehicule.controller.js,c/5/c5001b8e906f378276f45a2b19a6763694eaf19e
 L
 src/routes/vehicule.route.js,e/d/edb2f1ce4447cf568f41d0f885a61861b98756cc
+R
+"src/middleware/swagger-output.json,a/9/a917f7e10928dbd48bdfde2170778b527ba75908
