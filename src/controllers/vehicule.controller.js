@@ -2,14 +2,16 @@ const vehiculeModel = require('../models/vehicule.model');
 const dataBase = require("../db/db-connection");
 
 
-getAllVehicules = result_bdd_request => {
-    dataBase.query('SELECT * FROM test_db.vehicules', (error, result) => {
-        if (error) {
-            result_bdd_request(error);
-        }
-        result_bdd_request(null, result);
+getAllVehicules = (request, response) => {
+    vehiculeModel.getAllVehicules((error, data) => {
+        if (error)
+            response.status(500).send({
+                message: error.message || "Some error occurred while retrieving orders."
+            });
+        else
+            response.send(data);
     });
-}
+};
 
 
 getVehiculesById = (request, response) => {
