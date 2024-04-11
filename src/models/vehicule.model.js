@@ -12,7 +12,7 @@ const VehiculesConstructor = function (vehicules) {
 
 getAllVehicules = result_bdd_request => {
 
-    database.query("SELECT * FROM test_db.vehicules", (error, response) => {
+    dataBase.query("SELECT * FROM test_db.vehicules", (error, response) => {
         if (error) {
             result_bdd_request(error);
         }
@@ -23,7 +23,7 @@ getAllVehicules = result_bdd_request => {
 createVehicules = (newVehicules, result_bdd_request) => {
     const {marque, modele, annee, couleur, immatriculation} = newVehicules;
 
-    database.query(
+    dataBase.query(
         "INSERT INTO test_db.vehicules (marque, modele, annee, couleur, immatriculation) VALUES ($1, $2, $3, $4, $5)",
         [marque, modele, annee, couleur, immatriculation],
         (error, response) => {
