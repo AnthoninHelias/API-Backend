@@ -43,3 +43,11 @@
     npm install dotenv
     npm install pg
     npm install nodemon
+
+# Commande lancement serveur
+
+npm start
+
+# Commande lancement swagger
+
+npm run swagger

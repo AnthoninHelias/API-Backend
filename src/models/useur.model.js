@@ -41,8 +41,8 @@ getUsersById = (id, result_bdd_request) => {
 createUser = (user, result_bdd_request) => {
     const {username, password, first_name, last_name, email, age} = user;
 
-    database.query(
-        "INSERT INTO test_db.user (username,password,first_name,last_name,email,age) VALUES ($1, $2, $3, $4, $5, $6)",
+    dataBase.query(
+        "INSERT INTO test_db.users (username,password,first_name,last_name,email,age) VALUES ($1, $2, $3, $4, $5, $6)",
         [username, password, first_name, last_name, email, age],
         (error, response) => {
             if (error) {
@@ -58,7 +58,7 @@ updateUser = (id, user, result_bdd_request) => {
     const {username, password, first_name, last_name, email, age} = user;
 
     dataBase.query(
-        "UPDATE test_db.user SET username = $1, password = $2, first_name = $3, last_name = $4, email = $5, age = $6 WHERE id = $7",
+        "UPDATE test_db.user SET username = $1, password = $2, first_name = $3, last_name = $4, email = $5, age = $6 ",
         [username, password, first_name, last_name, email, age, id],
         (error, response) => {
             if (error) {
