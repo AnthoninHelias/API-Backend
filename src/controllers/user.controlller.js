@@ -49,7 +49,8 @@ createUser = (request, response) => {
         });
     }
 
-    const user = new user.model.UserConstructor({
+
+    const user = new useurModel.UserConstructor({
         id: request.body.id,
         username: request.body.username,
         password: request.body.password,
